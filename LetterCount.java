@@ -5,19 +5,19 @@ public class LetterCount {
 
         String inputText = "Введите текст";
 
-        int result = countLetterE(inputText);
-        System.out.println("Количество буквы 'е': " + result);
+        int result = countLetters(inputText);
+        System.out.println("Количество букв: " + result);
     }
 
-        public static int countLetterE(String text) {
-            int letterCount = 0;
+        public static int countLetters(String text) {
+            int count = 0;
 
             for (int i = 0; i < text.length(); i++) {
                 char ch = text.charAt(i);
-                if (ch == 'е' || ch == 'Е') {
-                    letterCount++;
+                if (Character.isLetter(ch)) {
+                    count++;
                 }
             }
-            return letterCount;
+            return count;
         }
     }
