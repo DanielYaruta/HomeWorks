@@ -1,0 +1,24 @@
+package Java_ClassesObjectsFirstProgram.Java5HW;
+
+public class CountLettersInWords {
+    public static void main(String[] args) {
+        String input = "Пора, мой друг, пора! покоя сердце просит";
+        countLettersInEachWord(input);
+    }
+
+    public static void countLettersInEachWord(String str) {
+        String[] words = str.split("\\s+");
+
+        for (String word : words) {
+            int letterCount = 0;
+
+            for (int i = 0; i < word.length(); i++) {
+                char ch = word.charAt(i);
+                if (Character.isLetter(ch)) {
+                    letterCount++;
+                }
+            }
+            System.out.println("Слово: " + word + " - " + letterCount + " букв");
+        }
+    }
+}
