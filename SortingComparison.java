@@ -1,4 +1,3 @@
-package JavaCoreCollection.Java1HW;
 
 import java.util.Arrays;
 import java.util.Random;
