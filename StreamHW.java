@@ -1,4 +1,3 @@
-package JavaCoreCollection.Java5;
 
 import java.util.*;
 import java.util.function.Predicate;
