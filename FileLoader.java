@@ -1,5 +1,3 @@
-package JavaCore_WorkWithNetwork.Java1;
-
 import java.util.Scanner;
 
 public class FileLoader {
